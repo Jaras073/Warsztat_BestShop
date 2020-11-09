@@ -1,0 +1,32 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+:root {
+    --color-bg: #F7F7F7;
+    --OpenSansBold11: bold 11px 'Open Sans'sans-serif;
+    --RalewayLight32: 300 32px 'Raleway', sans-serif;
+    --OpenSansBold16: bold 16px 'Open Sans'sans-serif;
+    --RalewayRegular49: 400 49px 'Raleway', sans-serif;
+    --OpenSansRegular16: 400 16px 'Open Sans'sans-serif;
+    --RelaweyRegular36: 400 36px 'Raleway', sans-serif;
+    --RalewayExtraBold20: 800 20px 'Raleway', sans-serif;
+    --RalewayRegular17: 400 17px 'Raleway', sans-serif;
+    --RalewayExtraBold16: 400 16px 'Raleway', sans-serif;
+    --RalewayBold20: bold 20px 'Raleway', sans-serif;
+    --OpenSansLight46: 300 46px 'Open Sans'sans-serif;
+    --OpenSansBold13: bold 13px 'Open Sans'sans-serif;
+    --OpenSansRegular14: 400 14px 'Open Sans'sans-serif;
+    --RalewayBold21: bold 21px 'Raleway', sans-serif;
+    --RalewayBold12: bold 12px 'Raleway', sans-serif;
+    --OpenSansSemibold16: 600 16px 'Open Sans'sans-serif;
+    --OpenSansRegular12: 400 12px 'Open Sans'sans-serif;
+    --RalewayLight26: 300 26px 'Raleway', sans-serif;
+    --OpenSansRegular11: 400 11px 'Open Sans'sans-serif;
+    --RalewayBold9: bold 9px 'Raleway', sans-serif;
+    --borderRadius40: 40px;
+    --borderRadius23: 23px;
+    --borderRadius35: 35px;
+}
+
+p {
+    font: var(--RalewayLight32);
+}
