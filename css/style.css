@@ -2,31 +2,148 @@
 font-family: 'Raleway', sans-serif; */
 :root {
     --color-bg: #F7F7F7;
-    --OpenSansBold11: bold 11px 'Open Sans'sans-serif;
-    --RalewayLight32: 300 32px 'Raleway', sans-serif;
-    --OpenSansBold16: bold 16px 'Open Sans'sans-serif;
-    --RalewayRegular49: 400 49px 'Raleway', sans-serif;
-    --OpenSansRegular16: 400 16px 'Open Sans'sans-serif;
-    --RelaweyRegular36: 400 36px 'Raleway', sans-serif;
-    --RalewayExtraBold20: 800 20px 'Raleway', sans-serif;
-    --RalewayRegular17: 400 17px 'Raleway', sans-serif;
-    --RalewayExtraBold16: 400 16px 'Raleway', sans-serif;
-    --RalewayBold20: bold 20px 'Raleway', sans-serif;
-    --OpenSansLight46: 300 46px 'Open Sans'sans-serif;
-    --OpenSansBold13: bold 13px 'Open Sans'sans-serif;
-    --OpenSansRegular14: 400 14px 'Open Sans'sans-serif;
-    --RalewayBold21: bold 21px 'Raleway', sans-serif;
-    --RalewayBold12: bold 12px 'Raleway', sans-serif;
-    --OpenSansSemibold16: 600 16px 'Open Sans'sans-serif;
-    --OpenSansRegular12: 400 12px 'Open Sans'sans-serif;
-    --RalewayLight26: 300 26px 'Raleway', sans-serif;
-    --OpenSansRegular11: 400 11px 'Open Sans'sans-serif;
-    --RalewayBold9: bold 9px 'Raleway', sans-serif;
+    --openSansBold11: 700 11px Open Sans, sans-serif;
+    --ralewayLight32: 300 32px Raleway, sans-serif;
+    --openSansBold16: bold 16px Open Sans, sans-serif;
+    --ralewayRegular49: 400 49px Raleway, sans-serif;
+    --openSansRegular16: 400 16px Open Sans, sans-serif;
+    --relaweyRegular36: 400 36px Raleway, sans-serif;
+    --ralewayExtraBold20: 800 20px Raleway, sans-serif;
+    --ralewayRegular17: 400 17px Raleway, sans-serif;
+    --ralewayExtraBold16: 400 16px Raleway, sans-serif;
+    --ralewayBold20: bold 20px Raleway, sans-serif;
+    --openSansLight46: 300 46px Open Sans, sans-serif;
+    --openSansBold13: bold 13px Open Sans, sans-serif;
+    --openSansRegular14: 400 14px Open Sans, sans-serif;
+    --ralewayBold21: bold 21px Raleway, sans-serif;
+    --ralewayBold12: bold 12px Raleway, sans-serif;
+    --openSansSemibold16: 600 16px Open Sans, sans-serif;
+    --openSansRegular12: 400 12px Open Sans, sans-serif;
+    --ralewayLight26: 300 26px Raleway, sans-serif;
+    --openSansRegular11: 400 11px Open Sans, sans-serif;
+    --ralewayBold9: bold 9px Raleway, sans-serif;
     --borderRadius40: 40px;
     --borderRadius23: 23px;
     --borderRadius35: 35px;
 }
 
-p {
-    font: var(--RalewayLight32);
+* {
+    box-sizing: border-box;
 }
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100vw;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.header .container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-menu-link {
+    padding: 23px 10px;
+    margin: 0 40px;
+    font: var(--openSansBold11);
+    color: rgba(165, 165, 165, 1);
+    text-decoration: none;
+    text-transform: uppercase;
+    /* transition: .3s; */
+}
+
+.header-menu-link:hover {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 4px solid rgba(8, 166, 228, 1);
+}
+
+.header-logo {
+    color: #08A6E4;
+    font: var(--ralewayLight32);
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.header-menu-el {
+    display: block;
+    text-align: center;
+}
+
+.main {
+    position: relative;
+    height: 712px;
+    width: 100vw;
+}
+
+.img-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+}
+
+.first-text {
+    text-align: center;
+    margin-top: 130px;
+    width: 100%;
+    font: var(--ralewayRegular49);
+    color: rgba(0, 0, 0, 1);
+}
+
+.second-text {
+    width: 100vw;
+    text-align: center;
+    margin-top: 20px;
+    font: var(--openSansRegular16);
+    color: rgba(0, 0, 0, 1);
+}
+
+.btn-main {
+    position: absolute;
+    display: inline-block;
+    top: 137px;
+    left: calc(50% - 220px);
+    width: 440px;
+    height: 67px;
+    background-color: rgba(8, 166, 228, 1);
+    border-radius: var(--borderRadius40);
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+    color: rgba(255, 255, 255, 1);
+    font: var(--openSansBold16);
+    border: none;
+}
+
+.popular-sales {
+    height: 531px;
+
+}
+
+.text-sales {
+    width: 100%;
+    text-align: center;
+    font: var(--relaweyRegular36);
+    margin-top: 100px;
+
+}
+
+.boxes-sales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-sales {}
