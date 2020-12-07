@@ -3,6 +3,7 @@
   License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 html,
 body,
 div,
@@ -137,6 +138,7 @@ table {
 body {
   font-family: "Open Sans", sans-serif;
   font-family: "Raleway", sans-serif;
+  font-family: "Font Awesome 5 Free";
 }
 
 * {
@@ -236,6 +238,12 @@ body {
   width: 100vw;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 }
+.header input#hamburger-button {
+  display: none;
+}
+.header span.hamburger-icon {
+  display: none;
+}
 
 .header__container {
   height: 70px;
@@ -243,6 +251,13 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-logo {
+  color: #08a6e4;
+  font: 300 32px Raleway, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .menu-list {
@@ -266,13 +281,6 @@ body {
   border-bottom: 4px solid #08a6e4;
 }
 
-.header-logo {
-  color: #08a6e4;
-  font: 300 32px Raleway, sans-serif;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .main {
   position: relative;
   background-image: url(../assets/background.png);
@@ -286,7 +294,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   background-size: cover;
 }
 
