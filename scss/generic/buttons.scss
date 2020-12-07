@@ -1,0 +1,47 @@
+.btn-main {
+    position: absolute;
+    display: inline-block;
+    top: 137px;
+    left: calc(50% - 220px);
+    width: 440px;
+    height: 67px;
+    background-color: rgba(8, 166, 228, 1);
+    border-radius: $borderRadius40;
+    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
+    color: rgba(255, 255, 255, 1);
+    font: $openSansBold16;
+    border: none;
+    outline: none;
+}
+
+.pricing__btn {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    border: none;
+    background-color: rgba(235, 71, 110, 1);
+    color: rgba(255, 255, 255, 1);
+    font: $openSansBold13;
+    text-decoration: none;
+    cursor: pointer;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.form__btn {
+    width: 226px;
+    height: 57px;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgba(8, 166, 228, 1);
+    border: none;
+    border-radius: 35px;
+    color: rgba(255, 255, 255, 1);
+    font: $openSansBold13;
+    float: right;
+}

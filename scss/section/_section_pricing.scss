@@ -1,0 +1,86 @@
+.pricing {
+    height: 616px;
+}
+
+.pricing__container {
+    @include flex_max(row, space-around, center);
+
+}
+
+.pricing__title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 50px 0;
+    font: $relaweyRegular36;
+}
+
+.pricing__offer {
+    width: 370px;
+    height: 460px;
+    border-radius: 18px;
+    position: relative;
+    text-align: center;
+}
+
+.pricing__offer:nth-child(2) {
+    box-shadow: 5px 10px 27px #07ACE629;
+    transform: scale(1.1);
+}
+
+.level {
+    font: $ralewayBold20;
+    padding: 34px 0 14px 0;
+}
+
+.price {
+    font: $openSansLight46;
+    color: rgba(251, 59, 100, 1);
+}
+
+.price span {
+    font: $ralewayBold12;
+    color: rgba(19, 37, 59, 1);
+    display: block;
+}
+
+.capacity {
+    font: $openSansRegular14;
+    padding: 69px 0 20px 0;
+}
+
+.domain {
+    font: $openSansRegular14;
+}
+
+.email {
+    font: $openSansRegular14;
+    padding: 20px 0 20px 0;
+}
+
+.licens {
+    font: $openSansRegular14;
+}
+
+.support {
+    font: $openSansRegular14;
+    padding-top: 20px;
+}
+
+.offer__yes::before {
+    content: "";
+    display: inline-flex;
+    width: 16px;
+    height: 11px;
+    background-image: url(/assets/ckechmark_1.svg);
+    background-repeat: no-repeat;
+}
+
+.offer__no::before {
+    content: "";
+    display: inline-flex;
+    width: 16px;
+    height: 11px;
+    background-image: url(/assets/close.svg);
+    background-repeat: no-repeat;
+}

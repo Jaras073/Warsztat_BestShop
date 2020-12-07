@@ -1,0 +1,12 @@
+@mixin flex_max($flex-direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+
+}
+
+@mixin flex_min($flex-direction) {
+    display: flex;
+    flex-direction: $flex-direction;
+}

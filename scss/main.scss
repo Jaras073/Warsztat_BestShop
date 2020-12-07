@@ -1,0 +1,16 @@
+@import "./generic/reset";
+@import "./settings/fonts";
+@import "./variables/colors";
+@import "./generic/mixins";
+@import "./variables/variables";
+@import "./generic/base";
+@import "./settings/breakpoints";
+
+// ---------- PROJECT IMPORTS ----------
+@import "./generic/buttons";
+@import "./section/header";
+@import "./section/main";
+@import "./section/section_benefit";
+@import "./section/section_pricing";
+@import "./section/section_contact";
+@import "./section/section_footer";

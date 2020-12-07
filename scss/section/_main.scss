@@ -1,0 +1,115 @@
+.main {
+    position: relative;
+    background-image: url(../assets/background.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 712px;
+    width: 100vw;
+}
+
+.img-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+}
+
+.first-text {
+    text-align: center;
+    margin-top: 130px;
+    width: 100%;
+    font: $ralewayRegular49;
+    color: $color-black;
+}
+
+.second-text {
+    width: 100vw;
+    text-align: center;
+    margin-top: 20px;
+    font: $openSansBold16;
+    color: $color-black;
+}
+
+
+.popular-sales {
+    height: 531px;
+}
+
+.text-sales {
+    width: 100%;
+    text-align: center;
+    font: $relaweyRegular36;
+    margin-top: 100px;
+}
+
+.boxes-sales {
+    @include flex_max(row, space-evenly, center);
+
+}
+
+.box-sales {
+    margin-top: 100px;
+}
+
+.circle {
+    display: block;
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.img__box-person::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    margin-left: 30px;
+    background-image: url(/assets/person.svg);
+    background-repeat: no-repeat;
+}
+
+.img__box-eye::before {
+    content: "";
+    display: inline-block;
+    width: 65px;
+    height: 37px;
+    margin-top: 14px;
+    margin-left: 30px;
+    background-image: url(/assets/eye.svg);
+    background-repeat: no-repeat;
+}
+
+.img__box-catalog::before {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 48px;
+    margin-top: 6px;
+    margin-left: 30px;
+    background-image: url(/assets/catalog.svg);
+    background-repeat: no-repeat;
+}
+
+.box-number {
+    font: $ralewayExtraBold20;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.box-text {
+    font: $ralewayRegular17;
+    color: $color-grey1;
+    width: 165px;
+    padding: 0 15px;
+    text-align: center;
+    margin: 19px 0 120px 0;
+}
+
+.lh1 {
+    line-height: 48px;
+    vertical-align: 20px;
+}

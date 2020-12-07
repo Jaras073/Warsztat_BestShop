@@ -1,0 +1,44 @@
+.footer {
+    height: 90px;
+    margin-top: 100px;
+    background-color: rgba(247, 247, 247, 1);
+    box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.16);
+}
+
+.container__footer {
+    height: 100%;
+    @include flex_max(row, space-between, center);
+
+}
+
+.footer-logo {
+    font: $ralewayLight26;
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-blue;
+    padding-bottom: 6px;
+}
+
+.footer__left-text {
+    font: $openSansRegular11;
+    color: $color-grey1;
+}
+
+.footer__right-facebook {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding-right: 20px;
+    background-image: url(/assets/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer__right-twitter {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
