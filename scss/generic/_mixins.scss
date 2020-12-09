@@ -10,3 +10,23 @@
     display: flex;
     flex-direction: $flex-direction;
 }
+
+@mixin respond($breakpoint) {
+    @if($breakpoint==small) {
+        @media (min-width: 360px) {
+            @content;
+        }
+    }
+
+    @else if($breakpoint==medium) {
+        @media (max-width: 780px) {
+            @content;
+        }
+    }
+
+    @else if($breakpoint==big) {
+        @media (max-width: 1351px) {
+            @content;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .header {
-    width: 100vw;
+    width: 100%;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 
     input#hamburger-button {
@@ -23,3 +23,141 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.menu-list {
+    @include flex_max(row, space-between, center);
+}
+
+.header-menu-link {
+    padding: 23px 10px;
+    margin: 0 40px;
+    font: $openSansBold11;
+    color: $color-grey1;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header-menu-link:hover {
+    color: $color-black;
+    border-bottom: 4px solid $color-blue;
+}
+
+
+@include respond(medium) {
+
+    .header__container {
+        width: 100%;
+
+        height: 70px;
+        @include flex_min(row);
+
+    }
+
+    .header-logo {
+        color: $color-blue;
+        font: $ralewayLight32;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    input#hamburger-button {
+        display: none;
+    }
+
+    label {
+        background-color: black;
+        opacity: 0.7;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        span.hamburger-icon {
+            color: black;
+        }
+    }
+
+    input#hamburger-button:checked~.menu-list {
+        display: block;
+        background-color: white;
+        width: 100%;
+
+        li {
+            padding: 10px;
+            text-align: center;
+        }
+
+        li:hover {
+            background-color: $color-blue;
+            color: white;
+        }
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .header-menu-link {
+        display: none;
+    }
+
+    .header-menu-link:hover {
+        display: none;
+    }
+
+
+}
+
+@include respond(small) {}
+
+// .header {
+//     padding: 20px;
+
+//     input#hamburger-button {
+//         display: none;
+//     }
+
+//     label {
+//         background-color: black;
+//         opacity: 0.7;
+//         padding: 5px 10px;
+//         border-radius: 5px;
+//         cursor: pointer;
+
+//         span.hamburger-icon {
+//             color: white;
+//         }
+//     }
+
+//     .menu-list {
+//         display: none;
+//     }
+
+//     input#hamburger-button:checked~.menu-list {
+//         display: block;
+//         background-color: white;
+//         width: 100%;
+
+//         li {
+//             padding: 10px;
+//             text-align: center;
+//         }
+
+//         li:hover {
+//             background-color: $color-blue;
+//             color: white;
+//         }
+//     }
+
+//     // .nav-logo {
+//     //     width: fit-content;
+//     //     display: block;
+//     //     margin: 10px auto;
+//     //     background-color: $logo-bg-color;
+//     //     color: white;
+//     //     text-decoration: none;
+//     //     padding: 5px 10px;
+//     //     border-radius: 5px;
+//     //     font-size: 2rem;
+//     //     font-family: $logo-font-family;
+//     // }
+// }

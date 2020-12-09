@@ -4,14 +4,15 @@
 @import "./generic/mixins";
 @import "./variables/variables";
 @import "./generic/base";
-@import "./settings/breakpoints";
+// @import "./settings/breakpoints";
 
 // ---------- PROJECT IMPORTS ----------
 @import "./generic/buttons";
 @import "./section/header";
-@import "./section/menu";
+// @import "./section/menu";
 @import "./section/main";
-@import "./section/section_benefit";
-@import "./section/section_pricing";
-@import "./section/section_contact";
-@import "./section/section_footer";
+@import "./section/section_popular";
+// @import "./section/section_benefit";
+// @import "./section/section_pricing";
+// @import "./section/section_contact";
+// @import "./section/section_footer";

@@ -45,3 +45,11 @@
     font: $openSansBold13;
     float: right;
 }
+
+@include respond(small) {
+    .btn-main {
+        top: 230px;
+        left: calc(50% - 140px);
+        width: 280px;
+    }
+}
