@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
 
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
-    // font-family: 'Font Awesome 5 Free';
 }
 
 $openSansBold11: 700 11px Open Sans,
@@ -14,7 +13,15 @@ $ralewayLight32: 300 32px Raleway,
 sans-serif;
 $openSansBold16: bold 16px Open Sans,
 sans-serif;
-$ralewayRegular49: 400 49px Raleway,
+$openSansBold14: bold 14px Open Sans,
+sans-serif;
+$relaweyRegular49: 400 49px Raleway,
+sans-serif;
+$relaweyRegular40: 400 40px Raleway,
+sans-serif;
+$relaweyRegular44: 400 44px Raleway,
+sans-serif;
+$ralewayRegular30: 400 30px Raleway,
 sans-serif;
 $openSansRegular16: 400 16px Open Sans,
 sans-serif;

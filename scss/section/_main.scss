@@ -17,7 +17,7 @@
     text-align: center;
     margin-top: 130px;
     width: 100%;
-    font: $ralewayRegular49;
+    font: $relaweyRegular49;
     color: $color-black;
 }
 
@@ -32,7 +32,7 @@
 @include respond(small) {
     .main {
         background-image: none;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .img-bg {
@@ -42,6 +42,7 @@
         transform: scale(2);
         width: 100%;
         background-size: contain;
+        overflow-y: hidden;
     }
 
     .first-text {
@@ -52,6 +53,50 @@
     .second-text {
         font: $openSansRegular14;
         padding: 0 50px;
+
+    }
+}
+
+@include respond(medium) {
+    .main {
+        background-image: none;
+        overflow: hidden;
+    }
+
+    .img-bg {
+        display: block;
+        position: absolute;
+        top: 58%;
+        transform: scale(2);
+        width: 100%;
+        background-size: contain;
+        overflow-y: hidden;
+    }
+
+    .first-text {
+        font: $relaweyRegular40;
+        margin-top: 100px;
+    }
+
+    .second-text {
+        font: $openSansRegular14;
+        padding: 0 50px;
+
+    }
+}
+
+@include respond(large) {
+
+
+    .first-text {
+        font: $relaweyRegular44;
+        margin-top: 130px;
+    }
+
+    .second-text {
+        font: $openSansRegular14;
+        padding: 0;
+        margin-top: 20px;
 
     }
 }

@@ -53,3 +53,27 @@
         width: 280px;
     }
 }
+
+@include respond(medium) {
+    .btn-main {
+        top: 230px;
+        left: calc(50% - 175px);
+        width: 350px;
+    }
+
+    .pricing__btn {
+        width: 250px;
+    }
+}
+
+@include respond(large) {
+    .btn-main {
+        top: 137px;
+        left: calc(50% - 195px);
+        width: 390px;
+    }
+
+    .pricing__btn {
+        width: 100px;
+    }
+}

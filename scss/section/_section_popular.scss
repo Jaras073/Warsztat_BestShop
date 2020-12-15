@@ -82,18 +82,39 @@
 
 @include respond(small) {
     .text-sales {
-
         margin-top: 0;
     }
 
     .boxes-sales {
         @include flex_min(column);
     }
+
     .box-sales {
         margin-top: 30px;
     }
+
     .box-text {
-        
+
+        margin: 19px 0 20px 0;
+    }
+}
+
+@include respond(medium) {
+    .text-sales {
+
+        margin-top: 100px;
+    }
+
+    .boxes-sales {
+        @include flex_min(column);
+    }
+
+    .box-sales {
+        margin-top: 30px;
+    }
+
+    .box-text {
+
         margin: 19px 0 20px 0;
     }
 }

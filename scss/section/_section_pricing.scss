@@ -35,36 +35,30 @@
 
 .price {
     font: $openSansLight46;
-    color: rgba(251, 59, 100, 1);
+    color: $color-red1;
 }
 
 .price span {
     font: $ralewayBold12;
-    color: rgba(19, 37, 59, 1);
+    color: $color-blue2;
     display: block;
 }
 
 .capacity {
-    font: $openSansRegular14;
     padding: 69px 0 20px 0;
 }
 
-.domain {
-    font: $openSansRegular14;
-}
-
-.email {
-    font: $openSansRegular14;
-    padding: 20px 0 20px 0;
-}
-
-.licens {
-    font: $openSansRegular14;
-}
-
+.capacity,
+.domain,
+.email,
+.licens,
 .support {
     font: $openSansRegular14;
-    padding-top: 20px;
+}
+
+.email,
+.support {
+    padding: 20px 0;
 }
 
 .offer__yes::before {
@@ -83,4 +77,143 @@
     height: 11px;
     background-image: url(/assets/close.svg);
     background-repeat: no-repeat;
+}
+
+@include respond(small) {
+    .pricing {
+        height: 1200px;
+    }
+
+    .pricing__container {
+        @include flex_min(column);
+
+    }
+
+    .pricing__title {
+        margin: 50px 0 50px 0;
+    }
+
+    .pricing__offer {
+        @include flex_min(row);
+        width: calc(100% - 40px);
+        height: 260px;
+    }
+
+    .pricing__offer-name {
+        flex-grow: 1;
+    }
+
+    .pricing__offer-value {
+        flex-grow: 1;
+        text-align: left;
+
+    }
+
+    .pricing__offer:nth-child(2) {
+        margin-top: 80px;
+
+        .level {
+            font: $ralewayBold20;
+            padding: 80px 8px 0 0;
+        }
+    }
+
+    .pricing__offer:nth-child(3) {
+        margin-top: 80px;
+
+        .level {
+            font: $ralewayBold20;
+            padding: 80px 23px 0 23px;
+        }
+    }
+
+    .level {
+        padding: 80px 40px 0 40px;
+    }
+
+    .capacity {
+        padding: 30px 0 20px 0;
+    }
+
+}
+
+@include respond(medium) {
+    .pricing {
+        height: 1200px;
+    }
+
+    .pricing__container {
+        @include flex_min(column);
+
+    }
+
+    .pricing__title {
+        margin: 50px 0;
+    }
+
+    .pricing__offer {
+        @include flex_min(row);
+        width: calc(100% - 40px);
+        height: 260px;
+    }
+
+    .pricing__offer-name {
+        flex-grow: 1;
+    }
+
+    .pricing__offer-value {
+        flex-grow: 1;
+        text-align: left;
+        padding-left: calc(25% - 30px);
+
+    }
+
+    .pricing__offer:nth-child(2) {
+        margin-top: 80px;
+
+        .level {
+            font: $ralewayBold20;
+            padding: 80px 8px 0 0;
+        }
+    }
+
+    .pricing__offer:nth-child(3) {
+        margin-top: 80px;
+
+        .level {
+            font: $ralewayBold20;
+            padding: 80px 23px 0 23px;
+        }
+    }
+
+    .level {
+        padding: 80px 40px 0 40px;
+    }
+
+    .capacity {
+        padding: 30px 0 20px 0;
+    }
+
+}
+
+@include respond(large) {
+    .pricing__container {
+        @include flex_max(row, space-around, center);
+    }
+
+    .pricing__offer {
+        width: 200px;
+    }
+
+}
+
+@include respond(big) {
+    .pricing__container {
+        @include flex_max(row, space-around, center);
+    }
+
+    .pricing__offer {
+        width: 280px;
+    }
+
 }

@@ -14,14 +14,12 @@
         <a href="#" class="header-logo">BestShop</a>
         <div class="menu">
           <nav class="menu-header">
-            <input
-              id="hamburger-button"
-              type="checkbox"
-              class="hamburger-button"
-            />
-            <label for="hamburger-button"
-              ><span class="hamburger-icon"><i class="fas fa-bars"></i></span
-            ></label>
+            <input type="checkbox" class="menu__btn" id="menu__btn" />
+            <label for="menu__btn" class="menu__toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
             <ul class="menu-list">
               <li class="header-menu-el">
                 <a href="#why_us" class="header-menu-link">why us</a>
@@ -71,12 +69,12 @@
         </div>
       </div>
     </section>
-    <!-- <section class="benefit">
+    <section class="benefit">
       <div class="container benefit_container">
         <div class="benefit__box-primary container">
           <div class="benefit__box-text container">
             <a id="benefit"></a>
-            <p class="box__title">Be always first</p>
+            <p class="box__title title_media-computer">Be always first</p>
             <p class="box__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -85,12 +83,18 @@
             <div class="box__line red_br"></div>
           </div>
           <div class="benefit__box-img box__img-diamond">
-            <img src="/assets/macbook.png" alt="" class="box__img" />
+            <img
+              src="/assets/macbook.png"
+              alt=""
+              class="box__img box__img-computer"
+            />
           </div>
         </div>
         <div class="benefit__box-secondary container">
           <div class="benefit__box-text">
-            <p class="box__title">Your shop is where you are!</p>
+            <p class="box__title title_media-phone">
+              Your shop is where you are!
+            </p>
             <p class="box__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -108,7 +112,9 @@
         </div>
         <div class="benefit__box-third container">
           <div class="benefit__box-text-third">
-            <p class="box__title">Increase recognition your brand!</p>
+            <p class="box__title title_media">
+              Increase recognition your brand!
+            </p>
             <p class="box__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -117,7 +123,11 @@
             <div class="box__line green_br"></div>
           </div>
           <div class="benefit__box-img benefit__box-img-third">
-            <img src="/assets/trumpet.png" alt="" class="box__img" />
+            <img
+              src="/assets/trumpet.png"
+              alt=""
+              class="box__img box__img-media"
+            />
           </div>
         </div>
       </div>
@@ -127,33 +137,45 @@
       <p class="pricing__title">Pricing</p>
       <div class="container pricing__container">
         <div class="pricing__offer red__br-pricing">
-          <div class="level">Basic</div>
-          <div class="price">$0</div>
-          <div class="capacity offer__yes">100 MB HDD</div>
-          <div class="domain offer__yes">1 Subdomain</div>
-          <div class="email offer__yes">2 E-mails</div>
-          <div class="licens offer__no">Two years license</div>
-          <div class="support offer__no">Full support</div>
+          <div class="pricing__offer-name">
+            <div class="level">Basic</div>
+            <div class="price">$0</div>
+          </div>
+          <div class="pricing__offer-value">
+            <div class="capacity offer__yes">100 MB HDD</div>
+            <div class="domain offer__yes">1 Subdomain</div>
+            <div class="email offer__yes">2 E-mails</div>
+            <div class="licens offer__no">Two years license</div>
+            <div class="support offer__no">Full support</div>
+          </div>
           <a href="" class="pricing__btn">Begin</a>
         </div>
         <div class="pricing__offer blue__br-pricing">
-          <div class="level">Professional</div>
-          <div class="price">$25 <span>Limited offer</span></div>
-          <div class="capacity offer__yes">500 MB HDD</div>
-          <div class="domain offer__yes">2 Subdomain</div>
-          <div class="email offer__yes">5 E-mails</div>
-          <div class="licens offer__yes">One year license</div>
-          <div class="support offer__no">Full support</div>
+          <div class="pricing__offer-name">
+            <div class="level">Professional</div>
+            <div class="price">$25 <span>Limited offer</span></div>
+          </div>
+          <div class="pricing__offer-value">
+            <div class="capacity offer__yes">500 MB HDD</div>
+            <div class="domain offer__yes">2 Subdomain</div>
+            <div class="email offer__yes">5 E-mails</div>
+            <div class="licens offer__yes">One year license</div>
+            <div class="support offer__no">Full support</div>
+          </div>
           <a href="" class="pricing__btn">Begin</a>
         </div>
         <div class="pricing__offer green__br-pricing">
-          <div class="level">Premium</div>
-          <div class="price">$60 <span>Limited offer</span></div>
-          <div class="capacity offer__yes">2 GB HDD</div>
-          <div class="domain offer__yes">5 Subdomain</div>
-          <div class="email offer__yes">20 E-mails</div>
-          <div class="licens offer__yes">Two years license</div>
-          <div class="support offer__yes">Full support</div>
+          <div class="pricing__offer-name">
+            <div class="level">Premium</div>
+            <div class="price">$60 <span>Limited offer</span></div>
+          </div>
+          <div class="pricing__offer-value">
+            <div class="capacity offer__yes">2 GB HDD</div>
+            <div class="domain offer__yes">5 Subdomain</div>
+            <div class="email offer__yes">20 E-mails</div>
+            <div class="licens offer__yes">Two years license</div>
+            <div class="support offer__yes">Full support</div>
+          </div>
           <a href="" class="pricing__btn">Begin</a>
         </div>
       </div>
@@ -217,6 +239,6 @@
           ></a>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

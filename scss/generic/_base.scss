@@ -8,6 +8,24 @@
 
 }
 
+@include respond(small) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@include respond(medium) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@include respond(large) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
 @include respond(big) {
     .container {
         padding: 0 15px;
@@ -20,7 +38,8 @@
 }
 
 .red_br {
-    border: 4px solid rgba(251, 59, 100, 1);
+    border: 2px solid rgba(251, 59, 100, 1);
+    background: rgba(251, 59, 100, 1);
 }
 
 .red__br-pricing {
@@ -32,7 +51,8 @@
 }
 
 .blue_br {
-    border: 4px solid rgba(8, 166, 228, 1);
+    border: 2px solid rgba(8, 166, 228, 1);
+    background: rgba(8, 166, 228, 1);
 }
 
 .blue__br-pricing {
@@ -44,7 +64,8 @@
 }
 
 .green_br {
-    border: 4px solid rgba(85, 223, 180, 1);
+    border: 2px solid rgba(85, 223, 180, 1);
+    background: rgba(85, 223, 180, 1);
 }
 
 .green__br-pricing {
