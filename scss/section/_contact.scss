@@ -1,0 +1,30 @@
+section.contact {
+    p {
+        font-size: 12px;
+
+        @include screen(medium) {
+            font-size: 15px;
+        }
+
+        @include respond(large) {
+            font-size: 15px;
+        }
+
+        @include respond(big) {
+            font-size: 18px;
+        }
+
+        @include respond(small, large, big) {
+            font-size: 15px;
+        }
+
+        @include respond(big) {
+            padding: 10px
+        }
+
+        @include respond(big, large) {
+            margin: 15px;
+        }
+
+    }
+}

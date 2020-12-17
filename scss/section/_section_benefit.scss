@@ -15,7 +15,7 @@
     height: 370px;
     background-color: $color-white;
     border: 1px solid $color-wite-blue;
-    border-radius: 5px;
+    border-radius: $borderRadius5;
 }
 
 .benefit__box-secondary {
@@ -25,7 +25,7 @@
     margin-top: 37px;
     background-color: $color-white;
     border: 1px solid $color-wite-blue;
-    border-radius: 5px;
+    border-radius: $borderRadius5;
 }
 
 .benefit__box-text {
@@ -103,14 +103,14 @@
     margin-right: 61px;
     background-color: $color-white;
     border: 1px solid $color-wite-blue;
-    border-radius: 5px;
+    border-radius: $borderRadius5;
 }
 
 .benefit__box-img-third {
     width: 440px;
     background-color: $color-green;
     border: 1px solid $color-wite-blue;
-    border-radius: 5px;
+    border-radius: $borderRadius5;
 }
 
 .box__img-media {
@@ -208,7 +208,7 @@
         top: 14px;
         left: 50%;
         transform: translateX(-30%), rotate(45deg);
-        border-radius: 10px;
+        border-radius: $borderRadius10;
     }
 
     .benefit__box-img.box__img-diamond::before {
@@ -355,7 +355,7 @@
         top: 14px;
         left: 50%;
         transform: translateX(-30%), rotate(45deg);
-        border-radius: 10px;
+        border-radius: $borderRadius10;
     }
 
     .benefit__box-img.box__img-diamond::before {
@@ -456,7 +456,7 @@
         width: 70px;
         margin-top: -140px;
         margin-left: 200px;
-        border-radius: 10px;
+        border-radius: $borderRadius10;
     }
 
     .box__img-circle::before {
@@ -532,7 +532,7 @@
         width: 70px;
         margin-top: -140px;
         margin-left: 200px;
-        border-radius: 10px;
+        border-radius: $borderRadius10;
     }
 
     .box__img-circle::before {

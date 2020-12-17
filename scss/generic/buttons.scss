@@ -21,7 +21,7 @@
     align-items: center;
     width: 150px;
     height: 50px;
-    border-radius: 23px;
+    border-radius: $borderRadius23;
     border: none;
     background-color: $color-red2;
     color: $color-white;
@@ -40,7 +40,7 @@
     margin-top: 20px;
     background-color: $color-blue;
     border: none;
-    border-radius: 35px;
+    border-radius: $borderRadius35;
     color: $color-white;
     font: $openSansBold13;
     float: right;
