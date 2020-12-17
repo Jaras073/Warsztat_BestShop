@@ -34,40 +34,40 @@
 
 
 .red {
-    background: rgba(251, 59, 100, 1);
+    background: $color-red1;
 }
 
 .red_br {
-    border: 2px solid rgba(251, 59, 100, 1);
-    background: rgba(251, 59, 100, 1);
+    border: 2px solid $color-red1;
+    background: $color-red1;
 }
 
 .red__br-pricing {
-    border: 1px solid rgba(251, 59, 100, 1);
+    border: 1px solid $color-red1;
 }
 
 .blue {
-    background: rgba(8, 166, 228, 1);
+    background: $color-blue;
 }
 
 .blue_br {
-    border: 2px solid rgba(8, 166, 228, 1);
-    background: rgba(8, 166, 228, 1);
+    border: 2px solid $color-blue;
+    background: $color-blue;
 }
 
 .blue__br-pricing {
-    border: 1px solid rgba(8, 166, 228, 1);
+    border: 1px solid $color-blue;
 }
 
 .green {
-    background: rgba(85, 223, 180, 1);
+    background: $color-green;
 }
 
 .green_br {
-    border: 2px solid rgba(85, 223, 180, 1);
-    background: rgba(85, 223, 180, 1);
+    border: 2px solid $color-green;
+    background: $color-green;
 }
 
 .green__br-pricing {
-    border: 1px solid rgba(85, 223, 180, 1);
+    border: 1px solid $color-green;
 }

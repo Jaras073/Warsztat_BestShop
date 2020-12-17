@@ -339,14 +339,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-.header-menu-link:nth-last-child(1) {
-  padding-right: 0;
-}
-
 .header-menu-link:hover {
   color: black;
   border-bottom: 4px solid #08a6e4;
+}
+
+.header-menu-link:nth-last-child(1) {
+  padding-right: 0;
 }
 
 @media screen and (max-width: 500px) and (min-width: 250px) {
@@ -398,7 +397,6 @@ body {
     padding: 10px 20px;
     margin: 0 20px;
   }
-
   .header-menu-link:hover {
     color: black;
     border-bottom: none;
@@ -454,7 +452,6 @@ body {
     margin: 0 20px;
     font: bold 14px Open Sans, sans-serif;
   }
-
   .header-menu-link:hover {
     color: black;
     border-bottom: none;

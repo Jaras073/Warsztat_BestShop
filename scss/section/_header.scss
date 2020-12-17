@@ -48,15 +48,15 @@
     color: $color-grey1;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+        color: $color-black;
+        border-bottom: 4px solid $color-blue;
+    }
 }
 
 .header-menu-link:nth-last-child(1) {
     padding-right: 0;
-}
-
-.header-menu-link:hover {
-    color: $color-black;
-    border-bottom: 4px solid $color-blue;
 }
 
 @include respond(small) {
@@ -114,11 +114,11 @@
         display: block;
         padding: 10px 20px;
         margin: 0 20px;
-    }
 
-    .header-menu-link:hover {
-        color: $color-black;
-        border-bottom: none;
+        &:hover {
+            color: $color-black;
+            border-bottom: none;
+        }
     }
 }
 
@@ -179,11 +179,10 @@
         padding: 12px 20px;
         margin: 0 20px;
         font: $openSansBold14;
-    }
 
-    .header-menu-link:hover {
-        color: $color-black;
-        border-bottom: none;
+        &:hover {
+            color: $color-black;
+            border-bottom: none;
+        }
     }
-
 }

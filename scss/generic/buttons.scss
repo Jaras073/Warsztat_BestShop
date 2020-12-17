@@ -5,10 +5,10 @@
     left: calc(50% - 220px);
     width: 440px;
     height: 67px;
-    background-color: rgba(8, 166, 228, 1);
+    background-color: $color-blue;
     border-radius: $borderRadius40;
-    box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.16);
-    color: rgba(255, 255, 255, 1);
+    box-shadow: 5px 10px 14px $color-blue3;
+    color: $color-white;
     font: $openSansBold16;
     border: none;
     outline: none;
@@ -23,8 +23,8 @@
     height: 50px;
     border-radius: 23px;
     border: none;
-    background-color: rgba(235, 71, 110, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: $color-red2;
+    color: $color-white;
     font: $openSansBold13;
     text-decoration: none;
     cursor: pointer;
@@ -38,10 +38,10 @@
     height: 57px;
     display: inline-block;
     margin-top: 20px;
-    background-color: rgba(8, 166, 228, 1);
+    background-color: $color-blue;
     border: none;
     border-radius: 35px;
-    color: rgba(255, 255, 255, 1);
+    color: $color-white;
     font: $openSansBold13;
     float: right;
 }
